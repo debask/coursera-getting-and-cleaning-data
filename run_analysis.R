@@ -65,4 +65,4 @@ tidy <- data %>%
     summarise_each(funs(mean))
 
 # Save tidy dataset as csv
-write.csv(tidy, "tidy.csv", row.names=FALSE)
+write.table(tidy, "tidy.txt", row.names=FALSE)
